@@ -1,44 +1,58 @@
 <template>
- <div class="swiper" @click="show($event)">
-    <swiper :options="swiperOption" class="swiper-box">
-    <swiper-slide class="swiper-item"><img src="//upload.jianshu.io/admin_banners/web_images/3780/45a4ba215a108dade733475225c19ecfb0b2336a.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"></swiper-slide>
-    <swiper-slide class="swiper-item"><img src="//upload.jianshu.io/admin_banners/web_images/3781/72a1084547a464f3a9f9fe620705179f9007d870.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"></swiper-slide>
-    <swiper-slide class="swiper-item"><img src="//upload.jianshu.io/admin_banners/web_images/3783/88ed9fc1f2a1b134eabc6c625ce7429139370a06.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"></swiper-slide>
-    <swiper-slide class="swiper-item"><img src="//upload.jianshu.io/admin_banners/web_images/3679/595da283c527291bf78adae750cb429bf2a1c22d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"></swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-    </swiper>
- </div>
+  <div class="vfooter" @click="choose($event)">
+    <router-link to="/onelist" class="one" :class="{add:isoneActive}"><i class="fa fa-circle-o icon"></i></router-link>
+    <router-link to="/all" class="all" :class="{add:isallActive}"><i class="fa fa-th-large icon"></i></router-link>
+    <router-link to="/login" class="me" :class="{add:ismeActive}"><i class="fa fa-user-o icon"></i></router-link>
+  </div>
 </template>
 
-<script>
 
+<script>
 export default {
-    data() {
-      return {
-        swiperOption: {
-          pagination: '.swiper-pagination',
-          direction: 'horizontal',
-          mousewheelControl: true,
-          spaceBetween:0,
-          autoplay:2000,
-          autoplayDisableOnInteraction:false,
-          loop : true
-        }
-      }
-    },
-    methods:{
-      show(e){
-        let src = e.target.getAttribute("src")
-        this.$emit("show",src)
+  data() {
+    return {
+      isoneActive:false,
+      isallActive:false,
+      ismeActive:false
+    }
+  },
+  methods:{
+    choose(event) { 
+      this.isoneActive=false;
+      this.isallActive=false;
+      this.ismeActive=false;
+      var target = event.target;
+      if(target.className==="fa fa-circle-o"){
+        this.isoneActive=true;
+        console.log(this.isoneActive)
       }
     }
+  }
 }
 </script>
 
+
 <style scoped>
-  .swiper-item img{
-      width: 100%
+  .vfooter{
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid rgba(7, 17, 27, .1);
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    font-size: 21px;
+    
+  }
+  .icon{
+    color: rgba(7, 17, 27, .6);
+  }
+  .add{
+    color:red;
+    font-size: 30px
   }
 
 </style>
-

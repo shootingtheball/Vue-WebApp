@@ -1,0 +1,240 @@
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+            <style>
+                body{
+                    background: #F5FFFA;
+                    margin: 0;
+                    padding: 0
+                }
+                main{
+                    padding: 10px 100px ;
+                    background: #fff;
+                    max-width: 640px;
+                    margin:20px auto;
+                    box-shadow: 1px 1px 6px  #ddd;
+                    padding: 3rem;
+                }
+                .face{
+                    border-radius: 50%;
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 0 auto;
+                    height: 130px;
+                    width: 130px;
+                    background: url("./face.jpg")  no-repeat;
+                    background-size: cover
+                }
+                .title{
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    text-align: center
+                }
+                .detial{
+                    color: #777;
+                    text-align: center;
+                    margin-top: 1rem
+                }
+                .workHeader{
+                    display: flex;
+                    justify-content: space-between
+                }
+                .tel{
+                    margin-right: 2rem
+                }
+                .line{
+                    border-bottom: 1px solid #ddd
+                }
+                .itemTitle{
+                    font-size: 1.25rem;
+                    margin-bottom: 0.7rem
+                }
+                ul{
+                    list-style:circle;
+                    padding: 0 30px
+                }
+                .wechat{
+                    margin-top: 1rem
+                }
+                a{
+                    color: #45b29a;
+                    display: inline-block;
+                    margin-bottom: 0.5rem
+                }
+                .exp{
+                    margin-bottom: 1.25rem
+                }
+                .workHeader{
+                    position: relative;
+                    z-index: 2;
+                    overflow: hidden;
+                    margin:0 1.67rem;
+                }
+                .workTitle{
+                    display: inline-block;
+                    color: #ff6d1f;
+                    font-size: 1rem;
+                    position: relative;
+                    font-weight: bold
+                }
+                /*.workHeader::after{
+                    content: "";
+                    position: absolute;
+                    top: 49%;
+                    height: 1px;
+                    background: #ccc;
+                    width: 100%
+
+                }*/
+                .workDesc{
+                    margin-left: 1.67rem
+                }
+                .workSkills{
+                    list-style: none;
+                    padding:0 1.67rem;
+                    
+                }
+                .workSkills li{
+                    display: inline-block;
+                    color: #3e6d8e;
+                    background: #dfeaf1;
+                    font-size: .9rem;
+                    padding: 4px
+                }
+                .skill-unfill {
+                    list-style: none;
+                    padding: 0 25px
+                }
+                .skill-unfill li{
+                    justify-content: space-between;
+                }
+                .skill-one-name{
+            
+                }
+                .skill-one-bar{
+                    height: 12px;
+                    background: 	#FFDEAD;
+                    width: 80%;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    vertical-align: middle
+                }
+                .skill-two-bar{
+                    height: 12px;
+                    background: 	#FFDEAD;
+                    width: 90%;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    vertical-align: middle
+                }
+                .skill-three-bar{
+                    height: 12px;
+                    background: 	#FFDEAD;
+                    width: 80%;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    vertical-align: middle
+                }
+                .skill-four-bar{
+                    height: 12px;
+                    background: 	#FFDEAD;
+                    width: 80%;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    vertical-align: middle
+                }
+                .skill-five-bar{
+                    height: 12px;
+                    background: 	#FFDEAD;
+                    width: 70%;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    vertical-align: middle
+                }
+                .line~ul,.work-ul{
+                    list-style: decimal
+                }
+            </style>    
+        </head>
+        <body>
+            <main>
+                <div class="face"></div>
+                <div class="title">你好，我是张廷玉</div>
+                <div class="detial"><span class="tel">Tel:18703991536</span><span>E-mail:18703991536@163.com</span></div>
+                <div class="desire">
+                    <div class="itemTitle">求职意向</div>
+                    <div class="line"></div>
+                    <div>
+                        <ul><li>web前端工程师</li></ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="itemTitle">项目</div>
+                    <div class="line"></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <!--<a href="https://github.com/shootingtheball">重写ONE移动端webApp-Vue2.0</a>
+                                <div>应用Vue2.0、axios、ES6、CSS3等技术，重写了ONE这个App(之前的实在太丑)，真实的API，一共13个组件，每天都会根据数据更新内容。</div>
+                                <div><span>github地址https://github.com/shootingtheball/one</span></div> -->
+                            </li>
+                            <li class="wechat">
+                                <a href="">3D轮播图-CSS3</a>
+                                <div>应用了css3中transform、perspective、transform-style、animation属性和原生JavaScript技术，实现了点击可以自动旋转的轮播效果。</div>
+                            </li>
+                            <li class="wechat">
+                                <a href="https://github.com/shootingtheball">解决选择恐惧症-微信小程序</a>
+                                <div>应用了微信小程序技术，实现了输入几种菜，点击生成今天吃什么的搭配的功能，减少在选择什么上浪费的时间。github地址https://github.com/shootingtheball/one</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="itemTitle">工作经历</div>
+                    <div class="line"></div>
+                    <div class="comp">
+                        <div class="workHeader"><div class="workTitle">上海暖游天下互联网有限公司</div><div>Web前端工程师</div><div>2016.10-2017.9</div></div>
+                        <ul class="work-ul">
+                            <li>专注于跨境旅游+购物的互联网旅游公司，人数100人左右。前端内容主要包含公司官网、活动页和微信小程序;</li>
+                            <li></li>
+                        </ul>
+                        <ul class="workSkills">
+                            <li>CSS3</li>
+                            <li>HTML5</li>
+                            <li>JavaScript</li>
+                            <li>Vue</li>
+                            <li>小程序</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill">
+                        <div class="itemTitle">技能</div>
+                        <div class="line"></div>
+                        <div>
+                            <ul class="skill-unfill">
+                                <li><div class="skill-one-name">CSS3+HTML5</div><div class="skill-one-bar"></div></li>
+                                <li><div class="skill-two-name">JavaScript</div><div class="skill-two-bar"></div></li>
+                                <li><div class="skill-three-name">Vue2.0</div><div class="skill-three-bar"></div></li>
+                                <li><div class="skill-four-name">jQuery</div><div class="skill-four-bar"></li>
+                                <li><div class="skill-five-name">stylus、bootstrap</div><div class="skill-five-bar"></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="mes">
+                        <div class="itemTitle">个人评价&其他信息</div>
+                        <div class="line"></div>
+                        <ul>
+                            <li>基本信息：男，93年，16年毕业于河南农业大学，本科学历。大学自学前端；</li>
+                            <li>前端博客：http://www.jianshu.com/u/97d611176ff0；</li>
+                            <li>喜欢书籍：《你不知道的JS》、《黑客与画家》;</li>
+                            <li>个人定位：主攻前端，慢慢往其他方面拓展。即使在没有产品或缺少后端的情况下也能做好产品；</li>
+                            <li>工作态度：尽量高效完成本职工作，在此基础上，与其他同事多交流学习，提升业务水平；</li>
+                            <li>我的优势：热爱前端，自学能力好，心态良好，情商与沟通能力良好；</li>  
+                            <li>我的劣势：非科班，对算法和数据结构的掌握不如科班同学。但有信心通过努力补足。</li>               
+                        </ul>
+                </div>
+            </main>
+        </body>
+        </html>
