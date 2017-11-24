@@ -22,9 +22,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 1 本项目重新写了App ONE的Web移动端。
 
-2 主要使用了Vue2.0技术栈、axios技术。实现了根据真实API数据每日更新APP内容的功能。配置和打包都是使用的vue-cli。
+2 主要使用了 Vue2.0 技术栈、axios 技术。实现了根据真实API数据每日更新APP内容的功能。配置和打包都是使用的 vue-cli。
 
-3 最后服务器使用了阿里云的轻量级云服务器，node.js镜像，使用了FileZilla传输项目地址。 
+3 最后服务器使用了阿里云的轻量级云服务器，node.js 镜像，使用了 FileZilla 传输项目地址。 
 
 4 真实API地址：https://github.com/jokermonn/-Api/blob/master/ONEv3.5.0~.md。
 
