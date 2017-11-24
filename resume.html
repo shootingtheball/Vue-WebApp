@@ -44,14 +44,18 @@
                     margin-right: 2rem
                 }
                 .line{
-                    border-bottom: 1px solid #ddd
+                    border-bottom: 1px solid #ddd;
+                    
+                }
+                .desire{
+                    list-style-type:decimal ;
                 }
                 .itemTitle{
                     font-size: 1.25rem;
                     margin-bottom: 0.7rem
                 }
                 ul{
-                    list-style:circle;
+                    list-style:disc;
                     padding: 0 30px
                 }
                 .wechat{
@@ -155,6 +159,9 @@
                 .line~ul,.work-ul{
                     list-style: decimal
                 }
+                .project{
+                    list-style: decimal
+                }
             </style>    
         </head>
         <body>
@@ -166,22 +173,33 @@
                     <div class="itemTitle">求职意向</div>
                     <div class="line"></div>
                     <div>
-                        <ul><li>web前端工程师</li></ul>
+                        <ul class="desire">
+                            <li>岗位：web前端工程师</li>
+                            <li>工作地点：北京</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="work">
                     <div class="itemTitle">项目</div>
                     <div class="line"></div>
                     <div>
-                        <ul>
+                        <ul class="project">
                             <li>
-                                <!--<a href="https://github.com/shootingtheball">重写ONE移动端webApp-Vue2.0</a>
-                                <div>应用Vue2.0、axios、ES6、CSS3等技术，重写了ONE这个App(之前的实在太丑)，真实的API，一共13个组件，每天都会根据数据更新内容。</div>
-                                <div><span>github地址https://github.com/shootingtheball/one</span></div> -->
+                                <a href="https://github.com/shootingtheball/Vue-WebApp">重写ONE移动端webApp-Vue2.0</a>
+                                <ul>
+                                    <li>应用Vue2.0、axios、ES6、CSS3等技术，基于真实的API，重写了App(之前的实在太丑)；</li>
+                                    <li>插件使用了axios、VueAwesomeSwiper和better-scroll；</li>
+                                    <li>实现了根据真实数据每日更新内容，弹出层，和根据月份生成内容等功能；</li>
+                                    <li>服务器是阿里云轻量服务器，demo地址：</li>
+                                    <li>github地址：https://github.com/shootingtheball/Vue-WebApp。</li>
+                                </ul>
                             </li>
                             <li class="wechat">
-                                <a href="">3D轮播图-CSS3</a>
-                                <div>应用了css3中transform、perspective、transform-style、animation属性和原生JavaScript技术，实现了点击可以自动旋转的轮播效果。</div>
+                                <a href="">3D轮播图及鼠标悬浮模糊效果-CSS3</a>
+                                <ul>
+                                    <li>前者应用了css3中transform、perspective、transform-style、animation属性和原生JavaScript技术，实现了点击可以自动旋转的轮播效果。</li>
+                                    <li></li>
+                                </ul>
                             </li>
                             <li class="wechat">
                                 <a href="https://github.com/shootingtheball">解决选择恐惧症-微信小程序</a>
@@ -196,8 +214,17 @@
                     <div class="comp">
                         <div class="workHeader"><div class="workTitle">上海暖游天下互联网有限公司</div><div>Web前端工程师</div><div>2016.10-2017.9</div></div>
                         <ul class="work-ul">
-                            <li>专注于跨境旅游+购物的互联网旅游公司，人数100人左右。前端内容主要包含公司官网、活动页和微信小程序;</li>
-                            <li></li>
+                            <li>专注于跨境旅游+购物的互联网旅游公司，人数100人左右。前端内容主要包含公司官网、活动页、web移动端网页、微信小程序等;</li>
+                            <li>
+                                <div>参与过公司官网PC端的开发</div>
+                                <ul>
+                                    <li>公司官网经历过三个版本，现版本包括主页、产品介绍、资讯、合作加盟、人才招聘等页面；</li>
+                                    <li>我在项目中主要负责根据设计稿利用html+css+JavaScript开发前端页面以及维护，包括新闻资讯、
+                                        关于我们、合作加盟、人才招聘四个页面的中文和韩语等版本。以及旧版本的单页内容；</li>
+                                    <li>项目前端部分主要使用了jQuery技术，实现了信息展示，以及基本的交互。</li>
+                                </ul>
+                            </li>
+                            <li><div>参与过web移动端开发</div></li>
                         </ul>
                         <ul class="workSkills">
                             <li>CSS3</li>
