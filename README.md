@@ -24,7 +24,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 2 主要使用了Vue2.0技术栈、axios技术。实现了根据真实API数据每日更新APP内容的功能。配置和打包都是使用的vue-cli。
 
-3 最后服务器使用了阿里云的轻量级云服务器，node.js镜像，地址https://www.aliyun.com。 
+3 最后服务器使用了阿里云的轻量级云服务器，node.js镜像，使用了FileZilla传输项目地址。 
 
 4 真实API地址：https://github.com/jokermonn/-Api/blob/master/ONEv3.5.0~.md。
 
