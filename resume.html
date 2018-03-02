@@ -1,4 +1,5 @@
 
+
 <html>
         <head>
             <meta charset="UTF-8">
@@ -7,7 +8,8 @@
                 body{
                     background: #F5FFFA;
                     margin: 0;
-                    padding: 0
+                    padding: 0;
+ 
                 }
                 main{
                     padding: 10px 100px ;
@@ -171,14 +173,15 @@
             <main>
                 <div class="face"></div>
                 <div class="title">你好，我是张廷玉</div>
-                <div class="detial"><span class="tel">Tel:18703991536</span><span>E-mail:18703991536@163.com</span></div>
+                <div class="detial"><span class="tel">Tel:18703991536</span><span>E-mail:zhang_tingyu@outlook.com</span></div>
                 <div class="desire">
                     <div class="itemTitle bold">基本信息</div>
                     <div class="line"></div>
                     <div>
                         <ul class="desire">
                             <li>求职意向：web前端工程师</li>
-                            <li>工作地点：北京</li>
+                            <li>目前工作地点：北京</li>
+                            <li>期望工作地点：成都</li>
                             <li>性别：男</li>
                             <li>出生年月：93年8月</li>
                             <li>学历：河南农业大学-12级统招本科</li>
@@ -190,24 +193,26 @@
                     <div class="line"></div>
                     <div>
                         <ul class="project">
-                            <li>
-                                <a href="https://github.com/shootingtheball/Vue-WebApp">重写ONE移动端webApp-Vue2.0</a>
+
+                            <li class="wechat">
+                                <a href="">web移动端众蜜商城</a>
                                 <ul>
-                                    <li>单页应用。应用了Vue2.0、axios、ES6、CSS3等技术，基于真实的API，重写了App(之前的实在太丑)；</li>
-                                    <li>插件使用了axios、VueAwesomeSwiper和better-scroll；</li>
-                                    <li>实现了根据真实API，实现了每日更新内容，二级页面，和根据月份生成内容等功能；</li>
-                                    <li>采用了阿里云轻量服务器，Windows镜像，demo：</li>
-                                    <li>github：https://github.com/shootingtheball/Vue-WebApp。</li>
+                                    <li>项目地址：http://wsfm.zowalk.com/;</li>
+                                    <li>一个移动端商城。技术栈Vue2.0，工具和框架用了Less、axios、mint-ui，SDK是weixin-js-sdk。主要模块：登录/注册模块、支付模块、购物车模块、订单地址模块、我的订单模块、优惠券模块、退出登录模块、搜索模块、一般的列表页模块，会员体系模块；</li>
+                                    <li>登录/注册模块和购物车模块都使用了Vuex和LocalStorge，也是本项目在本地存储数据的两个数据结构。登录模块也使用了Vue-router的全局守卫beforeEach在跳转User页面前判断是否登录。
+                                        支付模块使用的是weixin-js-sdk中微信支付相关。商品分类下的列表模块使用了vue-router的动态路径参数；</li>
+                                    <li>与后端交互封装并使用了axios插件，增加了请求的baseURL、请求头、Token、request拦截器、respone拦截器、统一的错误处理等，不同的请求种类又封装在单独的js文件。</li>
+                                    <li>其他方面，采用了路由的异步加载，UI主要使用iconfont等</li>
                                 </ul>
                             </li>
-                            <li class="wechat">
-                                <a href="">3D轮播图及鼠标悬浮模糊效果-CSS3</a>
-                                <ul>
-                                    <li>前者应用了CSS3中transform、perspective、transform-style、animation属性和原生JavaScript技术，实现了点击可以自动旋转的轮播效果；</li>
-                                    <li>demo：https://shootingtheball.github.io/CSS3-project/index.html；</li>
-                                    <li>后者采用了CSS3中的-webkit-linear-gradient、text-fill-color等属性，实现了字体的流光渐变及边框扩展效果；</li>
-                                    <li>demo：https://shootingtheball.github.io/CSS3-project/blur/index.html。</li>
-                                </ul>
+                            <li>
+                                    <a href="https://github.com/shootingtheball/Vue-WebApp">好学伴系统学生端和家教端部分</a>
+                                    <ul>
+                                        <li>一个包含老师端、家长端、学生端、家教端的学习系统。我负责学生端和家教端；</li>
+                                        <li>技术栈Vue2.0，工具采用了Less、axios。学生端的主要模块有：登录模块、视频直播模块、作业提交模块、预约课程模块。
+                                            家教端模块主要包括：日历签到模块、预约模块、查看作业模块、直播模块。
+                                        </li>
+                                    </ul>
                             </li>
                         </ul>
                     </div>
